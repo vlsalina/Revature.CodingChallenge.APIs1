@@ -17,6 +17,7 @@
 		6133A39B287F702500CE728F /* HttpRequestDemo2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6133A39A287F702500CE728F /* HttpRequestDemo2UITests.swift */; };
 		6133A39D287F702500CE728F /* HttpRequestDemo2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6133A39C287F702500CE728F /* HttpRequestDemo2UITestsLaunchTests.swift */; };
 		6133A3B4287F72FE00CE728F /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6133A3B3287F72FE00CE728F /* BookModel.swift */; };
+		6133A3B6287F73DF00CE728F /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6133A3B5287F73DF00CE728F /* Services.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		6133A39A287F702500CE728F /* HttpRequestDemo2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestDemo2UITests.swift; sourceTree = "<group>"; };
 		6133A39C287F702500CE728F /* HttpRequestDemo2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestDemo2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6133A3B3287F72FE00CE728F /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
+		6133A3B5287F73DF00CE728F /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 		6133A3B1287F729B00CE728F /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				6133A3B5287F73DF00CE728F /* Services.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6133A3B4287F72FE00CE728F /* BookModel.swift in Sources */,
+				6133A3B6287F73DF00CE728F /* Services.swift in Sources */,
 				6133A384287F702400CE728F /* Persistence.swift in Sources */,
 				6133A387287F702400CE728F /* HttpRequestDemo2.xcdatamodeld in Sources */,
 				6133A37D287F702300CE728F /* ContentView.swift in Sources */,
