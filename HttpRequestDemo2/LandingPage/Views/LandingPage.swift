@@ -15,7 +15,11 @@ struct LandingPage: View {
         NavigationView {
             VStack(alignment: .leading) {
                 List(books, id: \.authorName) { book in
-                    Text(book.authorName)
+                    NavigationLink {
+                        BookPage()
+                    } label: {
+                        Text(book.authorName)
+                    }
                 }
             }
             .onAppear() {
