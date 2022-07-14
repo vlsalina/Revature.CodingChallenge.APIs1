@@ -25,8 +25,10 @@ struct BookPage: View {
                         .clipShape(RoundedRectangle(cornerRadius: 25))
                         VStack(alignment: .leading, spacing: 15) {
                             Text(bk.title)
+                                .font(.title2)
+                                .fontWeight(.light)
                             HStack {
-                                Text(String(bk.pages))
+                                Text("Pages: \(bk.pages)")
                                 Text("Release: \(bk.releaseDate)")
                             }
                         }
