@@ -12,17 +12,19 @@ struct LandingPage: View {
     @State var showNextView = false
     
     var body: some View {
-        VStack {
-            List(books, id: \.authorName) { book in
-                Text(book.authorName)
+        NavigationView {
+            VStack(alignment: .leading) {
+                List(books, id: \.authorName) { book in
+                    Text(book.authorName)
+                }
             }
-        }
-        .onAppear() {
-            Services().loadData { books in
-                self.books = books
+            .onAppear() {
+                Services().loadData { books in
+                    self.books = books
+                }
             }
+            .navigationTitle("List of Authors")
         }
-        .navigationTitle("List of Authors")
     }
 }
 
