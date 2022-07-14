@@ -14,7 +14,7 @@ struct LandingPage: View {
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {
-                List(books, id: \.authorName) { book in
+                List(LandingPageViewModel().sortAuthors(bookData: books), id: \.authorName) { book in
                     NavigationLink {
                         BookPage(book: book)
                     } label: {
