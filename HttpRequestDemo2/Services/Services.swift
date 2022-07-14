@@ -18,12 +18,9 @@ class Services: ObservableObject {
         
         URLSession.shared.dataTask(with: url) { data, response, error in
             let books = try! JSONDecoder().decode([BookModel].self, from: data!)
-            
-            print(books)
             DispatchQueue.main.async {
                 completion(books)
             }
-            
         }.resume()
     }
 }

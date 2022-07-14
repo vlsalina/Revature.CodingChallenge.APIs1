@@ -8,12 +8,10 @@
 import Foundation
 
 struct BookModel: Decodable {
-    var authorId: Int
     var authorName: String
     var books: [Book]
     
-    init(authorId: Int, authorName: String, books: [Book]) {
-        self.authorId = authorId
+    init(authorName: String, books: [Book]) {
         self.authorName = authorName
         self.books = books
     }
